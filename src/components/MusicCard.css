@@ -1,0 +1,163 @@
+.music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    background: none; /* Orqa fon o'chirildi */
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .music-card {
+    background-color: #121212;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .music-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .cd {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.5s ease;
+  }
+  
+  .cd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cd.rotate {
+    animation: rotateCD 4s linear infinite;
+  }
+  
+  @keyframes rotateCD {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .shadow-text {
+    text-shadow: 0 0 10px cyan;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .controls svg {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .controls svg:hover {
+    transform: scale(1.2);
+    color: cyan;
+  }
+  
+  .progress {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .volume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .volume input {
+    flex: 1;
+  }
+  
+  .like-delete {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .like-delete button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  
+  .like-delete button:hover {
+    transform: scale(1.2);
+  }
+  
+  .playlist-column {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  }
+  
+  .favorite-item {
+    background-color: #1e1e2e;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .favorite-item:hover {
+    background-color: #2a2a4d;
+  }
+  
+  .favorite-item svg {
+    float: right;
+    color: red;
+    transition: transform 0.2s ease;
+  }
+  
+  .favorite-item svg:hover {
+    transform: scale(1.2);
+  }
+  .download-button {
+    padding: 6px 14px;
+    background-color: #00ffff;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #00dddd;
+    transform: scale(1.05);
+  }
+    
