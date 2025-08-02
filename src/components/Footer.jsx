@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import { FaCheckCircle } from 'react-icons/fa';
 
 import {
   FaTelegramPlane,
