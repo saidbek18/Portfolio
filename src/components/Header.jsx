@@ -20,7 +20,7 @@ function Header() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // 3 sekundda o‘zgaradi
+    }, 3000); 
     return () => clearInterval(interval);
   }, []);
 

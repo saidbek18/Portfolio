@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { FaInfoCircle,  FaTelegramPlane } from 'react-icons/fa';
 import './Navbar.css';
@@ -6,6 +5,7 @@ import logo from '../assets/s1.jpg';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   return (
     <nav className="navbar">
@@ -22,6 +22,7 @@ const Navbar = () => {
           Contact <FaTelegramPlane style={{ marginLeft: '6px' }} /> 
         </a>
       </div>
+
 
       <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

@@ -37,22 +37,22 @@ function Contact() {
 }
 
 function App() {
-  const location = useLocation(); // 🧠 Router o'zgarishini kuzatamiz
+  const location = useLocation();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 1200); // Loader 1.2s ko‘rinadi
+    const timer = setTimeout(() => setLoading(false), 1200); 
     return () => clearTimeout(timer);
-  }, [location]); // Har safar sahifa o‘zgarsa ishlaydi
+  }, [location]); 
 
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // animatsiya davomiyligi
+    AOS.init({ duration: 1000 }); 
   }, []);
 
   return (
     <>
-      {loading && <Loader />} {/* Faqat yuklanishda chiqadi */}
+      {loading && <Loader />}
       <Navbar />
       <Header />
       <MusicCard/>

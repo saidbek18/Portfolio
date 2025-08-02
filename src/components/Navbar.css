@@ -73,7 +73,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* RESPONSIVE STYLES */
 @media (max-width: 768px) {
   .navbar-links {
     position: absolute;

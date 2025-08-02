@@ -4,9 +4,8 @@
   padding: 220px 40px 60px;
   color: white;
   justify-content: center;
-  gap: 800px; /* 800 emas! Normal masofa */
+  gap: 800px;
 }
-
 
 
 .header-left {
@@ -22,7 +21,7 @@
   max-width: 520px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* ✅ O‘ngga yopishtirish */
+  align-items: flex-end; 
 }
 
 
@@ -74,7 +73,7 @@
 
 .carousel-box {
   width: 100%;
-  height: 347px; /* bu karuselning balandligi */
+  height: 347px; 
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -83,7 +82,7 @@
 .carousel-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* bu muhim! */
+  object-fit: cover; 
   display: block;
 }
 
@@ -123,24 +122,24 @@
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 40px;
-    padding-left: 10px;  /* chapdan qisqartirildi */
-    padding-right: 10px; /* o‘ngdan qisqartirildi */
-    gap: 20px; /* elementlar orasidagi masofa */
+    padding-left: 10px;  
+    padding-right: 10px; 
+    gap: 20px; 
   }
 
   .header-left {
     text-align: center;
-    padding: 0 5px; /* chap va o‘ngdan qisqartirildi */
-    max-width: 100%; /* to‘liq ekran bo‘ylab */
+    padding: 0 5px; 
+    max-width: 100%; 
   }
 
   .header-right {
-    align-items: center; /* carousel markazga keladi */
+    align-items: center;
     max-width: 100%;
   }
 
   .carousel-frame {
-    min-width: 90vw; /* ekran bo‘yicha mos */
+    min-width: 90vw; 
     padding: 10px;
   }
 }

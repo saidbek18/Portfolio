@@ -1,4 +1,3 @@
-// src/components/MusicCard.jsx
 import React, { useState, useRef, useEffect } from 'react';
 import './MusicCard.css';
 import {
@@ -89,11 +88,9 @@ const MusicCard = () => {
   useEffect(() => {
     if (audioRef.current) audioRef.current.volume = volume;
   }, [volume]);
-// Hooklar orasiga yangi holat qo‘shamiz
 const [history, setHistory] = useState([]);
 const [historyIndex, setHistoryIndex] = useState(-1);
 
-// shuffle ichida yangi qo‘shiq tanlanganda tarixga qo‘shamiz
 useEffect(() => {
   const shuffled = shuffle([...songs]);
   const firstIndex = Math.floor(Math.random() * shuffled.length);
@@ -104,11 +101,12 @@ useEffect(() => {
 
 }, []);
 
-  useEffect(() => {
-    if (isPlaying && audioRef.current) {
-      audioRef.current.play();
-    }
-  }, [currentIndex]);
+useEffect(() => {
+  if (isPlaying && audioRef.current) {
+    audioRef.current.play();
+  }
+}, [currentIndex, isPlaying]); // ✅ to'g'rilangan
+
 
   const togglePlay = () => {
     if (isPlaying) {

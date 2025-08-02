@@ -4,7 +4,7 @@
     align-items: center;
     padding: 60px 20px;
     min-height: 100vh;
-    background: none; /* Orqa fon o'chirildi */
+    background: none; 
     font-family: 'Segoe UI', sans-serif;
     color: white;
   }
